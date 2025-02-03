@@ -1,0 +1,94 @@
+/* usiversal selector to make everything by default zero */
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  box-sizing: border-box;
+  color: white;
+  font-family: monospace;
+}
+/* body margin -> to have a uniform margins around the layout  */
+body {
+  margin: 40px;
+  position: relative;
+}
+.popUp {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.653);
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+}
+.cross {
+  height: 50px;
+  width: 50px;
+  font-size: 50px;
+  margin-left: auto;
+  cursor: pointer;
+}
+.popUpText {
+  width: 100%;
+  height: calc(100% - 100px);
+  display: flex;
+}
+.popUpText > h3 {
+  text-align: center;
+  margin: auto;
+  font-size: 50px;
+}
+
+/* to give 20 px gap btw header mid cointainer and footer */
+.mid {
+  margin: 20px 0;
+  height: 700px;
+}
+
+.midChild {
+  display: inline-block;
+  width: 70%;
+}
+
+/* padding of 70px used from top and bottom in header, footer and extra content container to center the text vertically in these containers */
+.header {
+  background-color: #55d4eb;
+  height: 200px;
+  padding: 70px 10px;
+  font-size: 40;
+  text-align: center;
+}
+/* vertical-align used as the layout was deforming when writing something inside these divs due to overflow, this property ensures proper alignment */
+.sidebar {
+  background-color: #a0c263;
+  display: inline-block;
+  width: calc(30% - 10px);
+  margin-right: 10px;
+  height: 100%;
+  padding: 20px;
+  font-size: 40;
+  text-align: center;
+  vertical-align: top;
+}
+.mainContent {
+  background-color: #f5c531;
+  height: calc(100% - 220px);
+  margin-bottom: 20px;
+  padding: 20px;
+  font-size: 40;
+  text-align: center;
+}
+.extraContent {
+  background-color: #898989;
+  height: calc(100% - 500px);
+  padding: 70px 10px;
+  font-size: 40;
+  text-align: center;
+}
+.footer {
+  background-color: #ffa500;
+  height: 200px;
+  padding: 70px 10px;
+  font-size: 40;
+  text-align: center;
+}
